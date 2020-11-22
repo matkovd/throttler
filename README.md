@@ -2,6 +2,14 @@
 Small spring-boot starter for canary release of new feature (microservice) calls in monolith application, does a throttling of method calls on application level
 
 ### Usage
+Add dependency to pom.xml
+```
+<dependency>
+  <groupId>com.github.matkovd</groupId>
+  <artifactId>throttler</artifactId>
+  <version>1.0.4</version>
+</dependency>
+```
 Add a `@Throttle(percentage)` annotation to service call you want to canary release
 ```java
 @Throttle(30)
