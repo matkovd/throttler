@@ -1,6 +1,9 @@
 name: Throttler
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
